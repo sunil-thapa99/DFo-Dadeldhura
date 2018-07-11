@@ -1,0 +1,92 @@
+/*
+ * Easy Slider Widget ( Lite )
+ * Frontend Layout & Style
+ * Copyright (c) 2012 GhozyLab, Inc. - http://ghozylab.com/
+*/
+
+
+/* Images */	
+.ewic-wid-imgs {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	}
+	
+.bx-wrapper	 ul {
+	margin: 0 !important;
+	padding: 0 !important;
+	}
+	
+.bx-wrapper	 ul li {
+	list-style:none !important;
+	margin: 0 !important;
+	}
+	
+/* Slider Control */	
+
+.bx-clone {
+	display: none !important;
+	}
+	
+.bx-controls-auto {
+	display: none !important;
+	}
+	
+#latest-box {
+	padding: 5px;
+	position: relative;
+	}
+	
+#latest-box .bx-caption {
+	font-size:14px;
+	text-align:center;
+	margin-bottom: 0px !important;
+	bottom: 0px;
+	background: none repeat scroll 0% 0% rgba(80, 80, 80, 0.60) !important;
+	}
+
+/* Auto Hide Navigation */	
+.navcontroller .bx-controls-direction a {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+	}
+
+.navcontroller:hover .bx-controls-direction a {
+    opacity: 1;
+	}
+
+/* Lightbox */	
+.lb-closeContainer{
+	top: 10px;
+}
+
+.lb-number {
+	/* display: none !important; */
+	}
+	
+.ewc_close {
+	z-index:9995;
+	}
+	
+.sliderpreloader {width:100% !important; height:32px !important; background:url(../images/ajax-loader.gif) center center no-repeat !important; text-align:center;}
+
+.ewc-aff-link {
+	display:none;
+	margin-top:5px;
+	float:right;
+	width: auto;
+	color: #999;
+	font-size:12px !important;
+	font-style:italic;
+	margin-right:5px;
+	}
+.ewc-aff-link a {
+	text-decoration: none !important;
+	color: #0080FF !important;
+	}	
+	
+.ewc-aff-link a:hover {
+	text-decoration: underline !important;
+	}

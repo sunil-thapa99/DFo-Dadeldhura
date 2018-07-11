@@ -1,0 +1,33 @@
+#container{
+	width: 960px;
+}
+#header{min-height: 0px;}
+#content{width: 50%;}
+#sidebar-left{width: 25%;}
+#sidebar-right{width: 25%;}
+
+.page-template-page-cs-php #content, .page-template-page-sc-php #content {width: 65%;}
+.page-template-page-cs-php #sidebar-left, .page-template-page-sc-php #sidebar-left,
+.page-template-page-cs-php #sidebar-right, .page-template-page-sc-php #sidebar-right {width: 35%;}
+.page-template-page-scs-php #content {width: 50%;}
+.page-template-page-scs-php #sidebar-left {width: 25%;}
+.page-template-page-scs-php #sidebar-right {width: 25%;}
+
+#header {background-color:#035b03; padding: 0.7% 0; background-size: 960px 100px;}
+#nav-main {background-color:green;}
+#nav-main .nav-main {border-left: 1px solid #023266; border-right: 1px solid #4878ac;}
+#nav-main .nav-main > li, #nav-main .nav-main > ul > .page_item {border-left: 1px solid #005e00; 
+	border-right: 1px solid #005e00;}
+#top-bar {background-color:#222222;}
+#bottom-bar {background-color:#2f5cd8;}
+.blog-view, .comment-author-admin > .comment-body, .bypostauthor > .comment-body {border-top: 6px solid #2A5A8E;}
+.page-nav > *, .comment-nav > *, .author-info .title, .comment-reply-link, .widget-title,
+.widget_search .search-submit, .widget_calendar caption {background-color:#008000;}
+.genericon {color:#2A5A8E;}
+a {color:#0E4D7A;}
+a:hover {color:#0000EE;}
+.bjqs-slide a, .bjqs-slide img {height: 100%; width: 100%;}
+
+#header-logo{width: 15%;float: left; margin-top: 1%}
+#header-title{width: 70%;float: left;color: white;text-align: center;margin: 1.4% 0 0}
+#header-flag{width: 15%;float: right;}

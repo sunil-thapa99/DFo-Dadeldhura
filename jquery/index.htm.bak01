@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="gencyolcu" />
+
+	<title> Texas Academy </title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+    
+</head>
+
+<body>
+
+        <div class="top">
+        
+                    <div id="banner"> <img src="image/Texas Academy Logo.png"/></div><!--end of banner-->
+        
+        </div><!--end of top-->
+        <div id="clear"></div><!--end of clear-->
+        
+        <div id="wrapper">
+        
+        
+        
+                <div id="menu">
+                    
+                    
+                        <ul>
+                                    <li><a href=""> Home </a></li>
+                            <li>    <a href=""> About Us <img src="image/redarrow.png" width="10" height="10" /> </a>
+                            
+                                <ul>
+                                   		<li> <a href=""> Vision </a> </li>
+                                        <li> <a href=""> Mission </a> </li>
+                                        <li> <a href=""> Purpose </a> </li>
+                                                       
+                               	</ul>
+                                </li> 
+                              
+                                
+                                
+                                <li>    <a href=""> Courses <img src="image/redarrow.png" width="10" height="10" /> </a>
+                                
+                                <ul>
+                                        <li> <a href=""> Language Courses </a> 
+                                        
+                                                <ul>
+                                                
+                                                        <li> <a href=""> English   </a> </li>
+                                                        <li> <a href=""> Japanese   </a> </li>
+                                                
+                                                </ul>
+                                        
+                                        </li>
+                                        
+                                        <li> <a href=""> Prepration Courses   </a> 
+                                        
+                                                 <ul>
+                                                 
+                                                        <li> <a href=""> SAT   </a> </li>
+                                                        <li> <a href=""> GRE   </a> </li>
+                                                        <li> <a href=""> TOEFL  </a> </li>
+                                                        <li> <a href=""> IELTS   </a> </li>       
+                                                                                                  
+                                                 </ul>   
+                                        
+                                        
+                                        </li>
+                                        
+                                        <li> <a href=""> Accounting Courses  </a> 
+                                        
+                                                <ul>
+                                                 
+                                                        <li> <a href=""> Tax Consultant   </a> </li>
+                                                        <li> <a href=""> Internal Auditing   </a> </li>
+                                                        <li> <a href=""> Prepration Of Audit Report  </a> </li>
+                                                        <li> <a href=""> General Accounting Concept & Implications   </a> </li>       
+                                                                                                  
+                                                 </ul>
+                                        
+                                        
+                                        </li>
+                                                           
+                               	</ul>
+                                </li>
+                                
+                                
+                                <li><a href="">  Study Abroad <img src="image/redarrow.png" width="10" height="10" /> </a>
+                                
+                                <ul>
+                                   		
+                                        <li> <a href=""> U.S.A </a> </li>
+                                        <li> <a href=""> U.K </a> </li>
+                                        <li> <a href=""> Japan </a> </li>
+                                        <li> <a href=""> Canada </a> </li>
+                                        <li> <a href=""> Hungay </a> </li>
+                                        <li> <a href=""> Australis </a> </li> 
+                                        <li> <a href=""> Malaysia </a> </li>
+                                        <li> <a href=""> Newzealand </a> </li>
+                                       
+                                        
+                                        
+                                                      
+                               	</ul>
+                                </li>
+                                
+                                <li><a href=""> Gallery </a></li>
+                                <li><a href=""> Contact </a></li>
+                                
+                        </ul>
+                    
+                    </div><!--end of menu-->
+                    <div id="clear"></div><!--end of clear-->
+                    
+                    <div id="bodycontent">
+                    
+                    
+                                <div class="leftpart"></div><!--end of leftpart-->
+                                
+                                
+                                <div class="midpart">
+                                
+                                            <div id="slider"></div><!--end of slider-->
+                                
+                                </div><!--end of mid part-->
+                                
+                                
+                                <div class="rightpart"></div><!--end of rightpart-->
+                                <div id="clear"></div><!--end of clear-->
+                    
+                    
+                    </div><!--end of bodycontent-->
+                    <div id="clear"></div><!--end of clear-->
+                    
+        
+                
+        
+        </div><!--end of wraper-->
+
+</body>
+</html>

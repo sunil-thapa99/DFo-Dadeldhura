@@ -1,0 +1,78 @@
+@-webkit-keyframes up-marquee {
+    0%   { top:   10em }
+    100% { top: -20em }
+}
+@-moz-keyframes up-marquee {
+    0%   { top:   10em }
+    100% { top: -20em }
+}
+@-o-keyframes up-marquee {
+    0%   { top:   10em }
+    100% { top: -20em }
+}
+@keyframes up-marquee {
+    0%   { top:   10em }
+    100% { top: -20em }
+}
+
+@-webkit-keyframes down-marquee {
+    0%   { top:   -10em }
+    100% { top: 20em }
+}
+@-moz-keyframes down-marquee {
+    0%   { top:   -10em }
+    100% { top: 20em }
+}
+@-o-keyframes down-marquee {
+    0%   { top:   -10em }
+    100% { top: 20em }
+}
+@keyframes down-marquee {
+    0%   { top:   -10em }
+    100% { top: 20em }
+}
+
+.notice-list {
+    list-style: none;
+}
+
+.scroll-up, .scroll-down {
+    height    : 8em;
+    margin    : 1em auto;
+    overflow  : hidden;
+    position  : relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
+}
+
+.scroll-up .notice-list,
+.scroll-down .notice-list {
+    top               : 6em;
+    position          : relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
+}
+
+.scroll-up .notice-list {
+    -webkit-animation: up-marquee 15s linear infinite;
+    -moz-animation   : up-marquee 15s linear infinite;
+    -o-animation     : up-marquee 15s linear infinite;
+    animation        : up-marquee 15s linear infinite;
+}
+
+.scroll-down .notice-list {
+    -webkit-animation: down-marquee 15s linear infinite;
+    -moz-animation   : down-marquee 15s linear infinite;
+    -o-animation     : down-marquee 15s linear infinite;
+    animation        : down-marquee 15s linear infinite;
+}
+
+.scroll-up:hover .notice-list,
+.scroll-down:hover .notice-list {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state   : paused;
+    -o-animation-play-state     : paused;
+    animation-play-state        : paused;
+}

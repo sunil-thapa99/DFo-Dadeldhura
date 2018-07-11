@@ -1,0 +1,75 @@
+AddType text/x-component .htc
+
+RewriteEngine On
+# localhost
+ RewriteBase /doasoil/
+# live
+# RewriteBase /
+
+#for english
+RewriteRule ^en/home index.php?lan=en [L]
+#RewriteRule ^en/publications index.php?action=publications [L]
+RewriteRule ^en/bills index.php?action=bills [L]
+RewriteRule ^en/contact-us index.php?action=contact-us [L]
+RewriteRule ^en/([-A-Za-z0-9]+)$ index.php?lan=en&query=$1 [L]
+RewriteRule ^en index.php?lan=en [L]
+
+
+RewriteRule ^video-gallery index.php?action=video_gallery [L]
+
+RewriteRule ^cart/remove/([0-9]+)$ index.php?action=cart&removeId=$1 [L]
+RewriteRule ^cart/([0-9]+)$ index.php?action=cart&productId=$1 [L]
+RewriteRule ^cart index.php?action=cart [L]
+
+RewriteRule ^checkout index.php?action=check_out [L]
+RewriteRule ^signup index.php?action=sign_up [L]
+RewriteRule ^prelogin index.php?action=pre_login [L]
+RewriteRule ^makelogin index.php?action=make_log_in [L]
+RewriteRule ^forgotpassword index.php?action=forgot_password [L]
+RewriteRule ^home index.php [L]
+RewriteRule ^donate index.php?action=donate [L]
+RewriteRule ^apply index.php?action=apply [L]
+RewriteRule ^catalog.html index.php?action=catalog [L]
+RewriteRule ^order-([-A-Za-z0-9]+)$ index.php?url=$1&action=order [L]
+RewriteRule ^onlinebooking index.php?action=onlinebooking [L]
+
+RewriteRule ^activityregion/([-A-Za-z0-9]+)/([-A-Za-z0-9]+).html$ index.php?act=$1&reg=$2&action=showactivityregion [L]
+RewriteRule ^activitydestination/([-A-Za-z0-9]+)/([-A-Za-z0-9]+).html$ index.php?act=$1&dest=$2&action=showactivitydestination [L]
+
+RewriteRule ^booking/([-A-Za-z0-9]+).html$ index.php?url=$1&action=booking [L]
+
+RewriteRule ^products index.php?action=products [L]
+RewriteRule ^bills.html bills.php [L]
+
+RewriteRule ^contact-us index.php?action=contact-us [L]
+RewriteRule ^category-([-A-Za-z0-9]+).html$ index.php?url=$1&action=showcategory [L]
+#RewriteRule ^ordernow-([-A-Za-z0-9]+).html$ index.php?urll=$1&action=order-product [L]
+RewriteRule ^destination-([-A-Za-z0-9]+).html$ index.php?url=$1&action=showdestination [L]
+RewriteRule ^region-([-A-Za-z0-9]+).html$ index.php?url=$1&action=showregion [L]
+
+# fro PRODUCTLIST
+RewriteRule ^productlist/([-A-Za-z]+)/([-A-Za-z0-9]+)$ index.php?action=productlist&$1=$2 [L]
+RewriteRule ^productlist index.php?action=productlist [L]
+
+# fro TESTIMONIALS and FEEDBACK
+RewriteRule ^testimonials/([-A-Za-z]+)/([-A-Za-z0-9]+)$ index.php?action=testimonials&$1=$2 [L]
+RewriteRule ^testimonials index.php?action=testimonials [L]
+
+RewriteRule ^feedback/([-A-Za-z]+)/([-A-Za-z0-9]+)$ index.php?action=feedback&$1=$2 [L]
+RewriteRule ^feedback index.php?action=feedback [L]
+
+RewriteRule ^([-A-Za-z0-9]+)/page/([0-9]+)$ index.php?query=$1&page=$2 [L]
+RewriteRule ^([-A-Za-z0-9])+$ index.php?query=$0 [L]
+#RewriteRule index.html$ index.php [L]
+
+RewriteRule video_gallery index.php?action=video_gallery [L]
+
+#for programs
+#RewriteRule ^program-login.html programlogin.php [L]
+#RewriteRule ^program-management.html program.php [L]
+
+#RewriteRule ^gallery/([0-9]+)\.html$ index.php?galleryId=$1 [L]
+#RewriteRule ^testimonials/([-A-Za-z0-9]+)\.html$ index.php?action=testimonials&$1 [L]
+#RewriteRule ^search/([-A-Za-z0-9]+)/([0-9])\.html$ index.php?action=search&keyword=$1&page=$2 [L]
+#RewriteRule ^([-A-Za-z0-9]+)/([-A-Za-z0-9]+)\.html$ index.php?action=$1&title=$2 [L]
+#RewriteRule ^([-A-Za-z0-9]+)\.html$ index.php?title=$1 [L]

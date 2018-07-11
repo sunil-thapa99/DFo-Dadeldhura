@@ -1,0 +1,5 @@
+[11-Jul-2016 07:46:34 UTC] PHP Warning:  getimagesize(../pics/noimage.jpg): failed to open stream: No such file or directory in /home/doasoilg/public_html/data/imager.php on line 17
+[11-Jul-2016 07:46:34 UTC] PHP Warning:  Division by zero in /home/doasoilg/public_html/data/imager.php on line 30
+[11-Jul-2016 07:46:34 UTC] PHP Warning:  imagecreatefromjpeg(../pics/noimage.jpg): failed to open stream: No such file or directory in /home/doasoilg/public_html/data/imager.php on line 61
+[11-Jul-2016 07:46:34 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/doasoilg/public_html/data/imager.php on line 69
+[11-Jul-2016 07:46:34 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, boolean given in /home/doasoilg/public_html/data/imager.php on line 105
