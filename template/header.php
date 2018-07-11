@@ -61,4 +61,5 @@
 				<?php createMenu(0, "Header",$lan)?>
 			</ul>			
 		</nav>
+		 <marquee><h4><strong>Welcome to Forest Department, Dadeldhura</strong></h4></marquee>
 		<div id="main" class="col-scs cf">

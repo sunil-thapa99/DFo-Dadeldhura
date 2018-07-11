@@ -35,8 +35,8 @@
 		</div>
 		<div id="bottom-bar" class="cf">
 				
-			<span id="theme-link"><a href="http://www.krishighar.com/">Powered by: Team Krishighar</a></span>
-			<span id="bottom-bar-text">© Copyright <?=date('Y');?>. DOA Soil, Nepal. All Right Reserved.</span>
+			<span id="theme-link"><a href="http://malikaincorporate.com/" target="_blank">Powered by: Malika Incorporate Pvt. Ltd.</a></span>
+			<span id="bottom-bar-text">© Copyright <?=date('Y');?>. Malika Incorporate, Nepal. All Right Reserved.</span>
 		</div>
 	</div>
 

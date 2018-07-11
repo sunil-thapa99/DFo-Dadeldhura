@@ -5,7 +5,7 @@ define("ADMIN_LEFT_WIDTH", "20%");
 define("ADMIN_BODY_WIDTH", "80%");
 define("ADMIN_TITLE", "Admin Control Panel");
 define("PAGE_TITLE", "Soil Management Directorate");
-define("SITE_URL", "http://localhost/doasoil/");
+define("SITE_URL", "http://localhost/DFo-Dadeldhura/");
 
 
 ////////////////IMAGE FOLDER LOCATIONS////////////////////////
