@@ -2,7 +2,7 @@ AddType text/x-component .htc
 
 RewriteEngine On
 # localhost
- RewriteBase /doasoil/
+ RewriteBase /DFo-Dadeldhura/
 # live
 # RewriteBase /
 

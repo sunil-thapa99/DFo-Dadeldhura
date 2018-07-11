@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="css/custom.css" type="text/css" media="all">
 	<style type="text/css">
 	.language{color:white; font-weight: bold;}
-	.language:hover{color:red;}
+	.language:hover{color:#555;}
 	</style>
 </head>
 
@@ -46,7 +46,7 @@
 				<? }?>
 			</div>
 			<div id="header-flag">
-				<img src="images/flagnepal1.gif" style="width: 48%;margin-top: 4%;margin-left: 40%;" /><br>
+				<img src="images/Nepal-flag.gif" style="width: 48%;margin-top: 4%;margin-left: 40%;" /><br>
 				<?php if($lan!='en'){?>
 					<a href="<?=SITE_URL?>en" class="language">Language: English</a>
 				<? }

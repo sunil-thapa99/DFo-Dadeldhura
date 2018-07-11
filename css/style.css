@@ -22,7 +22,7 @@ html {
 
 body {
 	background-color: #e9e9e9;
-	color: #303030;
+	color: #111;
 	font-family: Arial, Sans-serif;
 	font-size: 13px;
 	line-height: 1.5;
@@ -220,7 +220,7 @@ address {margin-bottom: 10px;}
 	font-size: 15px;
 }
 
-#theme-link a {color: #CCC;}
+#theme-link a {color: #fff;}
 
 #theme-link a:hover {color: #DC8300;}
 
