@@ -65,7 +65,7 @@
         <a style="font-weight: bold;font-size: 15px;float: right;" href="<?=$officer['urlname']; ?>">read more...</a>
     </div>
     <div id="ewic-widget-2" class="widget-sidebar frontier-widget widget_ewic_sc_widget">
-      <div id="ewic-conwidget-75">
+<!--       <div id="ewic-conwidget-75">
         <div id="preloaderwidget-75" class="sliderpreloader" style="display: none;"></div>
           <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
             <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 238px;">
@@ -142,8 +142,22 @@
             });
           </script>
         </div>
+      </div> -->
+      <div id="text-9" class="widget-sidebar frontier-widget widget_text">
+        <?php
+        $info_officer=$groups->getById(INFO_OFFICER); $info_officer=$conn->fetchArray($info_officer);
+        ?>
+        <h4 class="widget-title"><?php if($lan=='en') echo $info_officer['nameen']; else echo $info_officer['name'];?></h4>
+        <div class="textwidget" style="text-align: center;">
+          <a href="<?=$info_officer['urlname']; ?>">
+          <img src="<?=CMS_GROUPS_DIR.$info_officer['image'];?>" style="width:180px;height:170px;" />
+          </a><br>
+          <? if($lan=='en') echo $info_officer['shortcontentsen']; else echo $info_officer['shortcontents']; ?>
+          <br>
+          <a style="font-weight: bold;font-size: 15px;float: right;" href="<?=$info_officer['urlname']; ?>">read more...</a>
+        </div>
       </div>
-      <div id="text-4" class="widget-sidebar frontier-widget widget_text">
+     <!--  <div id="text-4" class="widget-sidebar frontier-widget widget_text">
         <h4 class="widget-title">
           <? if($lan=='en') echo 'Downloads'; else echo 'डाउनलोड्स';?>
         </h4>
@@ -162,6 +176,6 @@
           <?php $linkUrl=$groups->getByIdResult(PUBLICATION);?>
         <a style="font-weight: bold;font-size: 15px;float: right;" href="<?=$linkUrl['urlname'];?>">see more...</a>
         </div>
-      </div>    
+      </div> -->    
     </div>
   </div>

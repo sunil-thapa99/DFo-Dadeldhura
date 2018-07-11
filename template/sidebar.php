@@ -1,19 +1,6 @@
 <div id="sidebar-left" class="sidebar cf">
 	<div id="widgets-wrap-sidebar-left">
-		<div id="text-9" class="widget-sidebar frontier-widget widget_text">
-	      <?php
-	      $info_officer=$groups->getById(INFO_OFFICER); $info_officer=$conn->fetchArray($info_officer);
-	      ?>
-	      <h4 class="widget-title"><?php if($lan=='en') echo $info_officer['nameen']; else echo $info_officer['name'];?></h4>
-	      <div class="textwidget" style="text-align: center;">
-	        <a href="<?=$info_officer['urlname']; ?>">
-	        <img src="<?=CMS_GROUPS_DIR.$info_officer['image'];?>" style="width:180px;height:170px;" />
-	        </a><br>
-	        <? if($lan=='en') echo $info_officer['shortcontentsen']; else echo $info_officer['shortcontents']; ?>
-	        <br>
-	        <a style="font-weight: bold;font-size: 15px;float: right;" href="<?=$info_officer['urlname']; ?>">read more...</a>
-	      </div>
-	    </div>
+		  
 
 
 
@@ -41,7 +28,7 @@
         <a href="bills.php"><img src="images/Untitled.png"></a>
       </div>
     </div> 
-	<div id="text-3" class="widget-sidebar frontier-widget widget_text">
+	  <div id="text-3" class="widget-sidebar frontier-widget widget_text">
       <h4 class="widget-title">
         <? if($lan=='en') echo 'Important Links'; else echo 'उपयोगी लिङ्क्स';?>
       </h4>
@@ -62,6 +49,27 @@
         <a style="font-weight: bold;font-size: 15px;float: right;" href="<?=$linkUrl['urlname'];?>">see more...</a>
       </div>
     </div>	
+     <div id="text-4" class="widget-sidebar frontier-widget widget_text">
+        <h4 class="widget-title">
+          <? if($lan=='en') echo 'Downloads'; else echo 'डाउनलोड्स';?>
+        </h4>
+        <div class="textwidget">
+        <ul>
+          <?php
+          $download=$groups->getByParentIdWithLimit(PUBLICATION,3);
+          while($downloadGet=$conn->fetchArray($download)){?>
+            <li>
+              <a href="<?=CMS_FILES_DIR.$downloadGet['contents']?>" target="_blank">
+                <? if($lan=='en') echo $downloadGet['nameen']; else echo $downloadGet['name'];?>
+              </a>
+            </li>
+          <? }?>
+          </ul>
+          <?php $linkUrl=$groups->getByIdResult(PUBLICATION);?>
+        <a style="font-weight: bold;font-size: 15px;float: right;" href="<?=$linkUrl['urlname'];?>">see more...</a>
+        </div>
+      </div>
 	</div>
+
 </div>
 <div class="dynamic">
