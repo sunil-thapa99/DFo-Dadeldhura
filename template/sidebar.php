@@ -1,10 +1,6 @@
 <div id="sidebar-left" class="sidebar cf">
 	<div id="widgets-wrap-sidebar-left">
-		  
-
-
-
-<div id="notice_board_widget-2" class="widget-sidebar frontier-widget widget_notice_board_widget">
+    <div id="notice_board_widget-2" class="widget-sidebar frontier-widget widget_notice_board_widget">
       <h4 class="widget-title">
         <? if($lan=='en') echo 'News'; else echo 'सूचना';?>
       </h4>
@@ -15,14 +11,17 @@
           while($newsGet=$conn->fetchArray($news)){?>
             <li>
               <a href="<?=$newsGet['urlname'];?>">
-                <? if($lan=='en') echo $newsGet['nameen']; else echo $newsGet['name']?>
+                <? if($lan=='en') echo $newsGet['nameen']; else echo $newsGet['name'];
+
+                  // echo $newsGet['id'];
+                  // echo $newsGet['name'] . '<br>';
+                ?>
               </a>
             </li>
           <?php }?>
         </ul>
       </div>
-    </div> 
-
+    </div>
     <div id="text-6" class="widget-sidebar frontier-widget widget_text">
       <div class="textwidget">
         <a href="bills.php"><img src="images/Untitled.png"></a>
@@ -49,27 +48,26 @@
         <a style="font-weight: bold;font-size: 15px;float: right;" href="<?=$linkUrl['urlname'];?>">see more...</a>
       </div>
     </div>	
-     <div id="text-4" class="widget-sidebar frontier-widget widget_text">
-        <h4 class="widget-title">
-          <? if($lan=='en') echo 'Downloads'; else echo 'डाउनलोड्स';?>
-        </h4>
-        <div class="textwidget">
-        <ul>
-          <?php
-          $download=$groups->getByParentIdWithLimit(PUBLICATION,3);
-          while($downloadGet=$conn->fetchArray($download)){?>
-            <li>
-              <a href="<?=CMS_FILES_DIR.$downloadGet['contents']?>" target="_blank">
-                <? if($lan=='en') echo $downloadGet['nameen']; else echo $downloadGet['name'];?>
-              </a>
-            </li>
-          <? }?>
-          </ul>
-          <?php $linkUrl=$groups->getByIdResult(PUBLICATION);?>
-        <a style="font-weight: bold;font-size: 15px;float: right;" href="<?=$linkUrl['urlname'];?>">see more...</a>
-        </div>
+    <div id="text-4" class="widget-sidebar frontier-widget widget_text">
+    <h4 class="widget-title">
+        <? if($lan=='en') echo 'Downloads'; else echo 'डाउनलोड्स';?>
+      </h4>
+      <div class="textwidget">
+      <ul>
+        <?php
+        $download=$groups->getByParentIdWithLimit(PUBLICATION,3);
+        while($downloadGet=$conn->fetchArray($download)){?>
+          <li>
+            <a href="<?=CMS_FILES_DIR.$downloadGet['contents']?>" target="_blank">
+              <? if($lan=='en') echo $downloadGet['nameen']; else echo $downloadGet['name'];?>
+            </a>
+          </li>
+        <? }?>
+        </ul>
+        <?php $linkUrl=$groups->getByIdResult(PUBLICATION);?>
+      <a style="font-weight: bold;font-size: 15px;float: right;" href="<?=$linkUrl['urlname'];?>">see more...</a>
       </div>
+    </div>
 	</div>
-
 </div>
 <div class="dynamic">

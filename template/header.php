@@ -37,12 +37,12 @@
 				<?php if($lan!='en'){?>
 					<h5>नेपाल सरकार</h5>
 					<h5>वन तथा भू संरक्षण मन्त्रालय</h5>
-					<h4>वन विभाग</h4>
+					<h4>वन विभाग, डडेल्धुरा</h4>
 				<? }
 				else{?>
 					<h5>Nepal Govvernment</h5>
 					<h5>Ministry of Forests and Soil Conservation</h5>
-					<h4>Department of Forest</h4>
+					<h4>Department of Forest, Dadeldhura</h4>
 				<? }?>
 			</div>
 			<div id="header-flag">
