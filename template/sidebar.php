@@ -11,7 +11,7 @@
           while($newsGet=$conn->fetchArray($news)){?>
             <li>
               <a href="<?=$newsGet['urlname'];?>">
-                <? if($lan=='en') echo $newsGet['nameen']; else echo $newsGet['name'];
+                <? echo $newsGet['name'];
 
                   // echo $newsGet['id'];
                   // echo $newsGet['name'] . '<br>';
