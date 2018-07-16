@@ -55,7 +55,7 @@
       <div class="textwidget">
       <ul>
         <?php
-        $download=$groups->getByParentIdWithLimit(PUBLICATION,3);
+        // $download=$groups->getByParentIdWithLimit(PUBLICATION,3);
         while($downloadGet=$conn->fetchArray($download)){?>
           <li>
             <a href="<?=CMS_FILES_DIR.$downloadGet['contents']?>" target="_blank">

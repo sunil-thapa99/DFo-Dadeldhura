@@ -48,7 +48,7 @@
 			<div id="header-flag">
 				<img src="images/Nepal-flag.gif" style="width: 48%;margin-top: 4%;margin-left: 40%;" /><br>
 				<?php if($lan!='en'){?>
-					<a href="<?=SITE_URL?>en" class="language">Language: English</a>
+					<a href="<?=SITE_URL?>/en" class="language">Language: English</a>
 				<? }
 				else{?>
 					<a href="<?=SITE_URL?>" class="language">Language: Nepali</a>
