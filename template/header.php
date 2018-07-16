@@ -40,7 +40,7 @@
 					<h4>वन विभाग, डडेल्धुरा</h4>
 				<? }
 				else{?>
-					<h5>Nepal Govvernment</h5>
+					<h5>Nepal Government</h5>
 					<h5>Ministry of Forests and Soil Conservation</h5>
 					<h4>Department of Forest, Dadeldhura</h4>
 				<? }?>
